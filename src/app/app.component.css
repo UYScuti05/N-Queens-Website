@@ -1,0 +1,43 @@
+mat-slider {
+  width: 300px;
+}
+
+.finalCell {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: wheat;
+  margin-left: 5px;
+  background: url("../assets/queen1.png");
+}
+
+.initialCell {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: wheat;
+  margin-left: 5px;
+}
+
+.processCell {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: red;
+  margin-left: 5px;
+}
+
+.firstDiv {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.startButton {
+  margin-left: 5px;
+}
+
+.changeGridButton {
+  margin-right: 5px;
+}
+

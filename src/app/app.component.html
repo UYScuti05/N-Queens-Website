@@ -1,0 +1,47 @@
+<mat-toolbar>
+  <span>N Queens Visualizer</span>
+</mat-toolbar>
+<br />
+
+<div class="firstDiv">
+  <button
+    mat-raised-button
+    color="accent"
+    class="changeGridButton"
+    (click)="changeGrid()"
+  >
+    Change Grid
+  </button>
+  <button
+    mat-raised-button
+    color="accent"
+    class="startButton"
+    (click)="startOperation()"
+  >
+    Start
+  </button>
+  <!-- {{N}} -->
+  <br />
+  <mat-slider
+    min="2"
+    max="12"
+    step="1"
+    value="4"
+    [(ngModel)]="N1"
+    thumbLabel
+  ></mat-slider>
+</div>
+
+<div class="firstDiv">
+  <div *ngFor="let item of showGrid">
+    <span *ngFor="let cell of item">
+      <div
+        [ngClass]="{
+          finalCell: cell >= 1,
+          initialCell: cell <= 0,
+          processCell: cell <= -1
+        }"
+      ></div>
+    </span>
+  </div>
+</div>
